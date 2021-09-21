@@ -16,14 +16,31 @@
 <script src="quiz_game_login.js"></script>
 </head>
 
+<style>
+
+.body_background{
+
+    background-image: url("back.png");
+}
+
+#color{
+    color: black;
+}
+
+#h3_color{
+    color: black;
+}
+
+</style>
+
 <body class="body_background">
 
     <center>
 
-        <h1 id="h1_color">The Math Quiz Game!</h1>
+        <h1 id="color">The Math Quiz Game!</h1>
         <div class="col-lg-4 col-sm-8 col-xs-11 login_div1">
-            <h3>Player 1 Login for the game</h3>
-            <label>User Name: </label>
+            <h3 id="h3_color">Player 1 Login for the game</h3>
+            <label id="label_color">User Name: </label>
             <input type="text" class="form-control" id="player1_name_input" placeholder="Player 1 Name">
         </div>
 
@@ -48,6 +65,6 @@
         <br>
 
         <button onclick="addUser()" class="btn btn-info" style="width: 30;">Login</button>
-        </center>
+    </center>
 </body>
 </html>

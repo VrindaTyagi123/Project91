@@ -16,7 +16,19 @@
 <script src="quiz_game_login.js"></script>
 </head>
 
-<body class="body_background">
+<style>
+
+    .background{
+        background-image: url("background.jpg");
+    }
+
+    #label_color{
+        color: black;
+        font-family: fantasy;
+    }
+</style>
+
+<body class="background">
 
     <center>
 
@@ -28,9 +40,7 @@
 
         <div class="container">
 
-            <center>
-
-                <h2 style="color: white;">The Math Quiz Game!</h2>
+                <h2 style="color: white;">Math Quiz!</h2>
                 <h3 id="player_question"></h3>
                 <h3 id="player_answer"></h3>
                 <div id="output" class="col-lg-6"></div>
@@ -38,7 +48,7 @@
                 <br>
                 <br>
 
-                <label>Number 1</label>
+                <label class="label_color">Number 1</label>
                 <br>
                 <br>
 
@@ -56,10 +66,9 @@
 
                 <button onclick="send()" class="btn btn-success" style="width: 30;">Send</button>
 
-            </center>
-
         </div>
+    </center>
 
-        </center>
+        
         </body>
         </html>
