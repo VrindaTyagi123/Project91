@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <html>
 
 <head>
@@ -7,64 +5,45 @@
     <title>The Math Quiz Game!</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"></link>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="style.css">
 
-<script src="quiz_game_login.js"></script>
+<script src="game_login.js"></script>
 </head>
-
-<style>
-
-.body_background{
-
-    background-image: url("back.png");
-}
-
-#color{
-    color: black;
-}
-
-#h3_color{
-    color: black;
-}
-
-</style>
 
 <body class="body_background">
 
     <center>
 
-        <h1 id="color">The Math Quiz Game!</h1>
-        <div class="col-lg-4 col-sm-8 col-xs-11 login_div1">
-            <h3 id="h3_color">Player 1 Login for the game</h3>
-            <label id="label_color">User Name: </label>
-            <input type="text" class="form-control" id="player1_name_input" placeholder="Player 1 Name">
-        </div>
+        <h1 style="color: black;">The Math Quiz Game!</h1>
 
         <br>
         <br>
-        <br>
-        <br>
+
+        <div class="col-lg-4 col-sm-8 col-xs-11 login_div1">
+            <h3 id="game">Player 1 Login for the game</h3>
+            <label>User Name: </label>
+            <input type="text" class="form-control" id="player1_name" placeholder="Player 1 Name">
+        </div>
+
         <br>
         <br>
 
         <div class="col-lg-4 col-sm-8 col-xs-11 login_div2">
             <h3>Player 2 Login for the game</h3>
             <label>User Name: </label>
-            <input type="text" class="form-control" id="player2_name_input" placeholder="Player 2 Name">
+            <input type="text" class="form-control" id="player2_name" placeholder="Player 2 Name">
         </div>
-        
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
 
-        <button onclick="addUser()" class="btn btn-info" style="width: 30;">Login</button>
+        <br>
+        <br>
+        
+        <button style="width: 20%; background-color: aquamarine; color: black; font-weight: bold; border-radius: 5px; " onclick="addUser()" class="btn btn-info" style="width: 80;">Login</button>
     </center>
+
+    
 </body>
 </html>
